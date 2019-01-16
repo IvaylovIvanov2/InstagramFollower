@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "InstagramFollower_Demo",
+  "version": "0.3",
+  "description": "Gain instagram followers",
+  "permissions": ["activeTab", "declarativeContent"],
+  "background": {
+    "scripts": ["gainFollowers.js", "likePosts.js", "unfollow.js"],
+    "persistent": false
+  }, 
+  "browser_action": {
+	  "default_popup": "popup.html",
+	  "default_icon": {
+      "16": "images/followerIcon.png"
+    }
+  }
+}
